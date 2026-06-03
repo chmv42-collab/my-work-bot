@@ -93,10 +93,10 @@ if __name__ == "__main__":
     print("\n📨 Отправка сообщения...")
     asyncio.run(send_daily_message())
     
-    print("\n✅ Бот запущен и будет отправлять уведомления каждый день в 8:45")
+    print("\n✅ Бот запущен и будет отправлять уведомления каждый день в 5:45")
     print("🛑 Для остановки нажмите Ctrl+C\n")
     
-    schedule.every().day.at("08:45").do(send_sync)
+    schedule.every().day.at("05:45").do(send_sync)
     
     while True:
         schedule.run_pending()
